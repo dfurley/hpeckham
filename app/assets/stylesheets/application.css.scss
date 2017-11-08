@@ -18,6 +18,46 @@
  @import 'bootstrap';
  
  h1, h2, h3, p {
-     font-family: 'Quicksand', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+  color: #cccccc;
  }
  
+.title {
+  font-family: 'Quicksand', sans-serif;
+  color: #cccccc;
+  font-size: 70px;
+}
+ 
+ 
+ body {
+  background: black;
+ }
+ 
+ .links > a {
+  font-family: 'Quicksand', sans-serif;
+  color: #cccccc;
+  padding: 0 25px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.m-b-md {
+  margin-bottom: 30px;
+}
+
+.full-height {
+  height: 80vh;
+}
+
+.flex-center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.position-ref {
+  position: relative;
+}
