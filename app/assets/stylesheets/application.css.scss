@@ -17,14 +17,12 @@
  @import 'bootstrap-sprockets';
  @import 'bootstrap';
  
- h1, h2, h3, p {
+ h1, h2, h3, p, .title {
   font-family: 'Quicksand', sans-serif;
   color: #cccccc;
  }
  
 .title {
-  font-family: 'Quicksand', sans-serif;
-  color: #cccccc;
   font-size: 70px;
 }
  
@@ -42,11 +40,10 @@
   letter-spacing: .1rem;
   text-decoration: none;
   text-transform: uppercase;
-}
-
-.links > a:hover {
-  color: #008080;
-  opacity: 0.75;
+  &:hover {
+   color: #008080;
+   opacity: 0.75;
+ }
 }
 
 .m-b-md {
@@ -75,18 +72,12 @@
  border: none;
 }
 
-.navbar-default .navbar-brand {
-  color: #cccccc;
-}
+.navbar-default .navbar-brand,
 .navbar-default .navbar-nav > li > a {
   color: #cccccc;
-  text-transform: uppercase;
+  &:hover {
+    color: #008080;
+    opacity: 0.75;
+  }
 }
-.navbar-default .navbar-brand:hover {
-  color: #008080;
-  opacity: 0.75;
-}
-.navbar-default .navbar-nav > li > a:hover {
-  color: #008080;
-  opacity: 0.75;
-}
+
