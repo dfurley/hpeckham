@@ -44,6 +44,11 @@
   text-transform: uppercase;
 }
 
+.links > a:hover {
+  color: #008080;
+  opacity: 0.75;
+}
+
 .m-b-md {
   margin-bottom: 30px;
 }
@@ -60,4 +65,28 @@
 
 .position-ref {
   position: relative;
+}
+
+.navbar {
+ background: #000000;  /* fallback for old browsers */
+ background: -webkit-linear-gradient(to right, #333333, #1a1a1a);  /* Chrome 10-25, Safari 5.1-6 */
+ background: linear-gradient(to right, #333333, #1a1a1a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ font-family: 'Quicksand', sans-serif;
+ border: none;
+}
+
+.navbar-default .navbar-brand {
+  color: #cccccc;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #cccccc;
+  text-transform: uppercase;
+}
+.navbar-default .navbar-brand:hover {
+  color: #008080;
+  opacity: 0.75;
+}
+.navbar-default .navbar-nav > li > a:hover {
+  color: #008080;
+  opacity: 0.75;
 }
