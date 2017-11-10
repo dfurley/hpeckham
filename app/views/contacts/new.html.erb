@@ -1,9 +1,23 @@
 <%= render "partials/navbar" %>
 
 <div class="container">
-    <div class="title-2">
+  <div class="row">
+    <div class="col-xs-8 col-xs-offset-2">
+      <div class="title-2">
         Get in touch
+      </div>
+      
+      <%= form_for "/contacts" do |f| %>
+        <%= f.label :name %>
+        <%= f.text_field :name %>
+        <%= f.label :email %>
+        <%= f.text_field :email %>
+        <%= f.label :comments %>
+        <%= f.text_area :comments %>
+        <%= f.submit 'Submit' %>
+      <% end %>
     </div>
+  </div> 
 </div>
 
 <%= render "partials/footer" %>
