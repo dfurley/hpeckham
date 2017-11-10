@@ -7,7 +7,9 @@
         Get in touch
       </div>
       
-      <%= flash[:error] %>
+      <% flash.each do |type, msg| %>
+        <%= content_tag :div, msg, class: "alert alert-#{type}" %>
+      <% end %>
       <div class="well">
         <%= form_for @contact do |f| %>
         
