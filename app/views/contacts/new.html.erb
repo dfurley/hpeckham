@@ -7,8 +7,9 @@
         Get in touch
       </div>
       
+      <%= flash[:notice] %>
       <div class="well">
-        <%= form_for "/contacts" do |f| %>
+        <%= form_for @contact do |f| %>
         
           <div class="form-group">      
             <%= f.label :name %>
