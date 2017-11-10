@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   get 'about', to: 'pages#about'
   get 'gallery', to: 'pages#gallery'
   resources :contacts
+  get 'contact', to: 'contacts#new'
 end
