@@ -2,30 +2,54 @@
 <br>
 <br>
 <div class="container">
-    <div class="row">
-      <div class="col-xs-8 col-xs-offset-2">
-        <div class="title-2">
-          Gallery
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="title-2">
+        Gallery
+      </div>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      
+      <div id="my-slider" class="carousel slide" data-ride="carousel">
+        
+        <!--indicators-->
+        <ol class="carousel-indicators">
+          <li data-target="#my-slider" data-slide-to="0" class="active"></li>
+          <li data-target="#my-slider" data-slide-to="1"></li>
+        </ol>
+        
+        <!--wrapper for slides-->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active"> <!--active is first slide-->
+            <img src="//c1.staticflickr.com/5/4554/37514398494_11248e57b6_b.jpg" class="img-responsive img-rounded" alt="Vermillion Lakes">
+          </div>
+          
+          <div class="item">
+            <img src="//c1.staticflickr.com/5/4506/36729329883_96360940dd_b.jpg" class="img-responsive img-rounded" alt="Skating Minnewanke">
+          </div>
+          
         </div>
+        
+        <!--controls-->
+        <a class="left carousel-control" href="#my-slider" role="button" data-slide="prev">
+          <span class="glyhicon glyhicon-chevron-left" aria-hidden="true"></span>
+        </a>
+        <a class="right carousel-control" href="#my-slider" role="button" data-slide="next">
+          <span class="glyhicon glyhicon-chevron-right" aria-hidden="true"></span>
+        </a>
+        
       </div>
-    </div>
       
-    
-      
-    <!--Vermillion lakes-->
-    <div class="row">
-      <div class="landscape-center">
-        <img src="https://c1.staticflickr.com/5/4554/37514398494_11248e57b6_b.jpg" class="img-responsive img-thumbnail" alt="Responsive image">
-      </div>
     </div>
-    <br>
-    
-    <!--Yoho-->
-    <div class="row">
-      <div class="portrait-center">
-        <img src="https://c1.staticflickr.com/5/4477/23910880988_c4728e518a_b.jpg" class="img-responsive img-thumbnail" alt="Responsive image">
-      </div>
-    </div>
-    <br>
-    
+  </div>
 </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<%= render "partials/footer" %>

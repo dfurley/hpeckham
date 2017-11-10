@@ -20,10 +20,15 @@
  @import "font-awesome-sprockets";
  @import "font-awesome";
  
- h1, h2, h3, p, .title, .title-2 {
+h1, h2, h3, p, .title, .title-2 {
   font-family: 'Quicksand', sans-serif;
   color: #cccccc;
- }
+}
+ 
+h4, h5 {
+  font-family: 'Quicksand', sans-serif;
+  color: #595959;
+}
  
 .title {
   font-size: 70px;
@@ -36,6 +41,7 @@
  
  body {
   background: black;
+  margin-bottom: 60px;
  }
  
  .links > a {
@@ -99,4 +105,5 @@
     opacity: 0.75;
   }
 }
+
 
