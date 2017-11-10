@@ -20,7 +20,7 @@
  @import "font-awesome-sprockets";
  @import "font-awesome";
  
-h1, h2, h3, p, .title, .title-2 {
+h1, h2, h3, p, .title, .title-2, .form-group {
   font-family: 'Quicksand', sans-serif;
   color: #cccccc;
 }
@@ -111,11 +111,6 @@ h4, h5 {
   border: none;
 }
 
-.form-group {
-  font-family: 'Quicksand', sans-serif;
-  color: #cccccc;
-}
-
 #flash-message {
     bottom: 20px;
     position: absolute;
@@ -129,3 +124,15 @@ h4, h5 {
     100% {opacity: 0; display:none;}
 }
 
+.btn-default {
+  font-family: 'Quicksand', sans-serif;
+  color: black;
+  background: #cccccc;
+  border: none;
+  &:hover {
+    background: #008080;
+    opacity: 0.75;
+    border: none;
+  }
+  
+}
